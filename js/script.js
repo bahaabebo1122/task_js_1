@@ -12,14 +12,14 @@ var totalprace = 0 ;
 
         if (content.innerHTML != ""){
             btn.style.display = "block"
-            content.style.borderWidth = "1px"
+            content.style.borderWidth = "2px"
         }
     }
   }
 )
 
   btn.onclick = function(){
-    praces.innerHTML = totalprace
+    praces.innerHTML = totalprace +`.LE`
 
     if(praces.innerHTML !=""){
         praces.style.borderColor = "green"
